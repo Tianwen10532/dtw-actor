@@ -25,8 +25,10 @@ wk_cls = AddWorker
 
 import os
 
-redis_ip = os.environ.get("REDIS_IP","192.168.117.144")
+redis_ip = os.environ.get("REDIS_IP","127.0.0.1")
 redis_port = os.environ.get("REDIS_PORT", "32000")
+
+
 serve_port = os.environ.get("SERVE_PORT","8080")
 
 wk = wk_cls()
